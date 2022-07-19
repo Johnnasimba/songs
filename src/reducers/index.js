@@ -3,7 +3,7 @@ import { combineReducers } from "redux"
 const songsReducer = () => {
   return [
     {
-      title: 'Lithe',
+      title: 'Lithe', 
       duration: '4.20'
     },
     {
@@ -27,7 +27,7 @@ const songsReducer = () => {
 
 const selectedSongReducer = (selectedSong=null, action) => {
   switch (action.type) {
-    case 'SELECT_SONG':
+    case 'SONG_SELECTED':
       return action.payload
     default:
       return selectedSong
